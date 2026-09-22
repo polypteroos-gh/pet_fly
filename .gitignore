@@ -1,0 +1,80 @@
+# ==========================================
+# Зависимости (Dependencies)
+# Не нужно коммитить загруженные библиотеки
+# ==========================================
+node_modules/
+.pnpm-store/
+.yarn/
+.bun/
+
+# ==========================================
+# Результаты сборки (Build outputs)
+# Скомпилированный код генерируется при деплое
+# ==========================================
+dist/
+build/
+out/
+.next/
+.astro/
+.svelte-kit/
+*.tsbuildinfo
+
+# ==========================================
+# Логи и временные файлы (Logs & Temporary)
+# ==========================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# ==========================================
+# Переменные окружения (Environment Variables)
+# КРИТИЧЕСКИ ВАЖНО: никогда не коммитить секреты и API-ключи!
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example  # Пример конфигурации (без реальных ключей) коммитить МНОЖНО
+
+# ==========================================
+# Файлы операционной системы и редакторов
+# ==========================================
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Настройки VS Code / Cursor (опционально: можно оставить .vscode/settings.json для команды)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# Кэш инструментов сборки и тестирования
+# ==========================================
+.cache/
+.vite/
+.eslintcache
+.stylelintcache
+.rzls/
+.turbo/
+
+# Покрытие тестами (Test Coverage)
+coverage/
+.nyc_output/
+playwright-report/
+blob-report/
+test-results/

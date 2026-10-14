@@ -1,0 +1,30 @@
+// @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+	--clr-bg: #eaebef;
+	--clr-blc: #fff;
+	--clr-txt: #1c1c1c;
+	--clr-muted: #aaa;
+	--clr-accent: #ff5c00;
+	--clr-accent-hover: #e14c00;
+	--clr-brd: #d1d1d1;
+	--clr-shd: rgba(0, 0, 0, 0.1);
+	--clr-overlay: rgba(0, 0, 0, 0.25);
+	--clr-success: #34c659;
+	--clr-error: #ff3b30;
+	--clr-warning: #ffcc00;
+}
+
+$font-family: 'Manrope', sans-serif;
+$clr-bg: var(--clr-bg);
+$clr-blc: var(--clr-blc);
+$clr-txt: var(--clr-txt);
+$clr-muted: var(--clr-muted);
+$clr-accent: var(--clr-accent);
+$clr-accent-hover: var(--clr-accent-hover);
+$clr-brd: var(--clr-brd);
+$clr-shd: var(--clr-shd);
+$clr-overlay: var(--clr-overlay);
+$clr-success: var(--clr-success);
+$clr-error: var(--clr-error);
+$clr-warning: var(--clr-warning);

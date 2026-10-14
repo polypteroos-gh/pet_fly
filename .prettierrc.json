@@ -1,0 +1,18 @@
+{
+  "semi": false,
+  "useTabs": true,
+  "formatOnSave": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "arrowParens": "avoid",
+  "htmlWhitespaceSensitivity": "ignore",
+  "singleAttributePerLine": true,
+  "bracketSameLine": false,
+  "printWidth": 80,
+  "proseWrap": "always",
+  "trailingComma": "none",
+  "tabWidth": 2
+}

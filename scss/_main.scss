@@ -1,0 +1,121 @@
+html {
+	font-size: 18px;
+}
+@media (max-width: 1480px) {
+	html {
+		font-size: 17px;
+	}
+}
+@media (max-width: 1360px) {
+	html {
+		font-size: 16.5px;
+	}
+}
+@media (max-width: 1280px) {
+	html {
+		font-size: 16px;
+	}
+}
+@media (max-width: 1240px) {
+	html {
+		font-size: 15.5px;
+	}
+}
+@media (max-width: 1199px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media (max-width: 1159px) {
+	html {
+		font-size: 14.5px;
+	}
+}
+@media (max-width: 1099px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media (max-width: 1049px) {
+	html {
+		font-size: 13.5px;
+	}
+}
+@media (max-width: 1024px) {
+	html {
+		font-size: 13px;
+	}
+}
+@media (max-width: 992px) {
+	html {
+		font-size: 12.5px;
+	}
+}
+@media (max-width: 800px) {
+	html {
+		font-size: 12px;
+	}
+}
+@media (max-width: 768px) {
+	html {
+		font-size: 11.5px;
+	}
+}
+@media (max-width: 767px) {
+	html {
+		font-size: 16px;
+	}
+}
+@media (max-width: 360px) {
+	html {
+		font-size: 15px;
+	}
+}
+body {
+	background-color: $clr-bg;
+	color: $clr-txt;
+	font-family: $font-family;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
+	text-size-adjust: 100%; // Исправляет размер шрифта на iOS
+	-webkit-text-size-adjust: 100%; // Исправляет размер шрифта на iOS
+	-webkit-font-smoothing: antialiased; // Исправляет рендеринг шрифта на macOS
+	overflow-x: hidden;
+}
+.main {
+	width: 100%;
+	overflow: hidden;
+}
+.container {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+	position: relative;
+	z-index: 2;
+}
+.sec {
+	margin: 11rem auto 14rem;
+	position: relative;
+}
+
+.bg-pic {
+	display: block;
+	user-select: none;
+	pointer-events: none;
+}
+
+.will-change {
+	will-change: transform, opacity;
+}
+@media (max-width: 767px) {
+	.container {
+		padding: 0 1rem;
+	}
+	.sec {
+		margin: 6rem auto 8rem;
+	}
+}

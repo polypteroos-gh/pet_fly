@@ -1,30 +1,720 @@
-<!DOCTYPE html>
-<!-- Объявляет тип документа: браузер будет разбирать страницу как HTML5 -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Private Jet</title>
+		<meta
+			name="description"
+			content="Experience luxury private jet travel with our affordable and seamless booking service. Fly in style and comfort today."
+		/>
+		<meta
+			name="keywords"
+			content="private jet, luxury travel, affordable flights, seamless booking, jet charter, exclusive flights"
+		/>
+		<meta
+			property="og:title"
+			content="Private Jet"
+		/>
+		<meta
+			property="og:description"
+			content="Experience luxury private jet travel with our affordable and seamless booking service. Fly in style and comfort today."
+		/>
+		<meta
+			property="og:image"
+			content="./assets/images/plane/06-1920.png"
+		/>
+		<meta
+			property="og:type"
+			content="website"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/style.css"
+		/>
+		<link
+			rel="icon"
+			href="./assets/images/favicon.svg"
+			type="image/svg+xml"
+		/>
+	</head>
+	<body>
+		<header
+			class="header fade-in will-change"
+			id="js-header"
+		>
+			<div class="container">
+				<div class="header__wrap">
+					<a
+						class="logo"
+						href="/"
+					>
+						LetsFly
+					</a>
+					<nav
+						class="menu"
+						id="js-menu"
+						aria-label="Главное меню"
+					>
+						<ul>
+							<li><a href="#intro">Intro</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#costs">Costs</a></li>
+							<li><a href="#features">Features</a></li>
+							<li><a href="#faq">FAQ</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div id="smooth-wrapper">
+			<div id="smooth-content">
+				<main class="main">
+					<section
+						class="welcome will-change"
+						id="intro"
+					>
+						<div class="welcome__main will-change zoom-in-fade-in">
+							<div class="logo welcome__logo">
+								LetsFly
+							</div>
+							<hgroup class="welcome__hgroup">
+								<p class="sup-title welcome__sup-title">Personal jets</p>
+								<h1 class="welcome__title">
+									Luxury.
+									<br />
+									Affordable
+								</h1>
+								<p class="description welcome__description">
+									We believe loyalty should be rewarded
+								</p>
+							</hgroup>
+							<div class="welcome__cta">
+								<button class="btn btn--secondary">Learn more</button>
+								<button
+									class="btn btn--primery js-open-modal"
+									aria-haspopup="dialog"
+									aria-controls="booking-modal"
+									type="button"
+									aria-expanded="false"
+									aria-label="Open application form"
+									decoding="async"
+								>
+									Let's Fly
+								</button>
+							</div>
+						</div>
+						<picture>
+							<source
+								type="image/webp"
+								srcset="
+									./assets/images/plane/06-480.webp   480w,
+									./assets/images/plane/06-1024.webp 1024w,
+									./assets/images/plane/06-1920.webp 1920w,
+									./assets/images/plane/06.webp      2560w
+								"
+								sizes="(min-width: 1400px) 70vw, 100vw"
+							/>
+							<img
+								class="bg-pic welcome__plane will-change"
+								src="./assets/images/plane/06.png"
+								alt=""
+								aria-hidden="true"
+								draggable="false"
+								fetchpriority="high"
+								loading="eager"
+							/>
+						</picture>
+						
+						<div class="welcome__bg-clouds">
+							<picture>
+								<source
+									type="image/webp"
+									srcset="
+										./assets/images/clouds/main-cloud-480.webp  480w,
+										./assets/images/clouds/main-cloud.webp     1024w
+									"
+									sizes="(min-width: 1200px) 60vw, 100vw"
+								/>
+								<img
+									class="bg-pic welcome__bg-cloud welcome__bg-cloud--1 fade-in will-change"
+									src="./assets/images/plane/main-cloud.webp"
+									alt=""
+									aria-hidden="true"
+									draggable="false"
+									fetchpriority="high"
+									loading="eager"
+									decoding="async"
+								/>
+							</picture>
+							<img
+								class="bg-pic welcome__bg-cloud welcome__bg-cloud--2 left-fade-in will-change"
+								src="./assets/images/clouds/left-cloud.webp"
+								alt=""
+								aria-hidden="true"
+								draggable="false"
+								fetchpriority="high"
+								loading="eager"
+								decoding="async"
+							/>
+							<img
+								class="bg-pic welcome__bg-cloud welcome__bg-cloud--3 right-fade-in will-change"
+								src="./assets/images/clouds/right-cloud.png"
+								alt=""
+								aria-hidden="true"
+								draggable="false"
+								fetchpriority="high"
+								loading="eager"
+								decoding="async"
+							/>
+						</div>
+					</section>
+					<ul
+						class="sec mission"
+						aria-live="polite"
+					>
+						<li class="will-change">One simple fly rate.</li>
+						<li class="will-change">A discount that gets better and better.</li>
+						<li class="will-change">Apply in minutes.</li>
+						<li class="will-change">Built for rich people.</li>
+					</ul>
+					<section
+						class="sec lf-sec"
+						aria-labelledby="luxury-flights-title"
+						id="about"
+					>
+						<div class="container will-change">
+							<hgroup class="sec__hgroup">
+								<p class="sup-title">EXPERIENGE OUR</p>
+								<h2
+									id="luxury-flights-title"
+									class="section-title"
+								>
+									Luxury
+									<br />
+									Flights.
+								</h2>
+							</hgroup>
+							<div class="sec__mai">
+								<p class="description section__description">
+									Experience unmatched luxury in the skies. Our private jets
+									offer top-tier comfort, personalized service, and exquisite
+									amenities for every journey.
+								</p>
+								<button
+									class="btn btn--gray js-open-modal"
+									aria-controls="booking-modal"
+									type="button"
+									aria-haspopup="dialog"
+									aria-expanded="false"
+									aria-label="Open application form"
+								>
+									Book now
+								</button>
+							</div>
+						</div>
 
-<html lang="ru">
-<!-- Корневой элемент страницы; lang задаёт язык содержимого -->
+						<picture>
+							<source
+								type="image/webp"
+								srcset="
+									./assets/images/plane/05-480.webp   480w,
+									./assets/images/plane/05-1024.webp 1024w,
+									./assets/images/plane/05-1920.webp 1920w,
+									./assets/images/plane/05.webp      2560w
+								"
+								sizes="(min-width: 1400px) 70vw, 100vw"
+							/>
+							<img
+								class="bg-pic lf-sec__pic non-select-image will-change"
+								src="./assets/images/plane/05.png"
+								alt=""
+								aria-hidden="true"
+								draggable="false"
+								fetchpriority="low"
+								loading="lazy"
+								decoding="async"
+							/>
+						</picture>
+						
+					</section>
+					<section
+						class="sec loyalty-sec"
+						aria-labelledby="loyalty-title"
+					>
+						<div class="container">
+							<div class="loyalty-sec__wrap">
+								<hgroup class="sec__hgroup loyalty-sec__hgroup will-change">
+									<p class="sup-title">SEAMIESSI</p>
+									<h2
+										id="loyalty-title"
+										class="section-title"
+									>
+										Instantly
+										<br />
+										Booked.
+									</h2>
+								</hgroup>
 
-<head>
-<!-- Служебная информация: кодировка, viewport, заголовок, стили — не отображается на странице -->
+								<picture>
+									<source
+										type="image/webp"
+										srcset="
+											./assets/images/plane/loyalty-plane-480.webp   480w,
+											./assets/images/plane/loyalty-plane-1024.webp 1024w,
+											./assets/images/plane/loyalty-plane-1920.webp 1920w,
+											./assets/images/plane/loyalty-plane.webp      2560w
+										"
+										sizes="(min-width: 1400px) 70vw, 100vw"
+									/>
+									<img
+										class="bg-pic loyalty-sec__pic non-select-image will-change"
+										src="./assets/images/plane/loyalty-plane.png"
+										alt=""
+										aria-hidden="true"
+										draggable="false"
+										fetchpriority="low"
+										loading="lazy"
+										decoding="async"
+									/>
+								</picture>
+								<div class="sec__main loyalty-sec__main will-change">
+									<p class="description section__description">
+										Enjoy new, exclusive perks and benefits every single year
+										with our luxury flight services.
+										<br />
+										<br />
+										We believe lovely should be rewarded.
+									</p>
+									<button
+										class="btn btn--gray js-open-modal"
+										aria-controls="booking-modal"
+										type="button"
+										aria-haspopup="dialog"
+										aria-expanded="false"
+										aria-label="Open application form"
+									>
+										Get Started
+									</button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section
+						class="sec costs-sec"
+						aria-labelledby="costs-title"
+						id="costs"
+					>
+						<div class="container">
+							<div class="costs-sec__wrap">
+								<hgroup class="sec__hgroup costs-sec__hgroup will-change">
+									<p class="sup-title">Insanly Low</p>
+									<h2
+										id="costs-title"
+										class="section-title costs-sec__title"
+									>
+										Costs.
+									</h2>
+								</hgroup>
+								<picture>
+									<source
+										type="image/webp"
+										srcset="
+											./assets/images/plane/03-480.webp   480w,
+											./assets/images/plane/03-1024.webp 1024w,
+											./assets/images/plane/03-1920.webp 1920w,
+											./assets/images/plane/03.webp      2560w
+										"
+										sizes="(min-width: 1400px) 70vw, 100vw"
+									/>
+									<img
+										class="bg-pic costs-sec__pic non-select-image will-change"
+										src="./assets/images/plane/03.png"
+										alt=""
+										aria-hidden="true"
+										draggable="false"
+										fetchpriority="low"
+										loading="lazy"
+										decoding="async"
+									/>
+								</picture>
+								<div class="costs-sec__right will-change">
+									<div class="costs-sec__persents">
+										<div class="costs-sec__persents-val">5.25</div>
+										<div class="costs-sec__persents-legend">
+											<span>%</span>
+											<abbr title="per annum">PA</abbr>
+										</div>
+									</div>
+									<div class="costs-sec__sub">Estimated Rate*</div>
+								</div>
+								<div class="sec__main costs-sec__main will-change">
+									<p class="description section__description">
+										Unlock tallored savings lust for vou. Exclusive personal
+										discounts on our luxury erivere jet services.
+									</p>
+									<button
+										class="btn btn--gray"
+										type="button"
+										aria-haspopup="dialog"
+										aria-controls="booking-modal"
+										aria-expanded="false"
+									>
+										Learn more
+									</button>
+								</div>								
+							</div>
+						</div>
+					</section>
+					<section
+						class="sec apply-sec"
+						id="features"
+					>
+						<div class="container">
+							<div class="apply-sec__wrap">
+								<div class="apply-sec__row">
+									<article
+										class="apply-sec-card apply-sec-card--1 will-change"
+										aria-labelledby="apply-card-1-title"
+										role="region"
+									>
+										<h2
+											class="apply-sec-card__title"
+											id="apply-card-1-title"
+										>
+											Apply in minutes.
+										</h2>
+										<button
+											class="btn btn--gray"
+											type="button"
+											aria-haspopup="dialog"
+											aria-controls="booking-modal"
+											aria-expanded="false"
+											aria-label="Learn more about applying in minutes"
+										>
+											Learn more
+										</button>
+									</article>
+								</div>
+								<div class="apply-sec__row">
+									<article
+										class="apply-sec-card apply-sec-card--2 will-change"
+										aria-labelledby="apply-card-2-title"
+										role="region"
+									>
+										<h2
+											class="apply-sec-card__title"
+											id="apply-card-2-title"
+										>
+											Backed by American’s leading airlines.
+										</h2>
+										<button
+											class="btn btn--gray"
+											type="button"
+											aria-haspopup="dialog"
+											aria-controls="booking-modal"
+											aria-expanded="false"
+											aria-label="Learn more about our airline partners"
+										>
+											Learn more
+										</button>
+									</article>
+									<article
+										class="apply-sec-card apply-sec-card--3 will-change"
+										aria-labelledby="apply-card-3-title"
+										role="region"
+									>
+										<figure
+											class="apply-chat"
+											aria-label="Example chat with support"
+										>
+											<ul class="apply-chat__wrap">
+												<li
+													class="apply-chat__message apply-chat__message--user"
+												>
+													<p>Nice. How can I switch to Let’sFly?</p>
+												</li>
+												<li
+													class="apply-chat__message apply-chat__message--system"
+												>
+													<p>
+														Tap the 'Refinance Now' button to get started. If
+														you have any questions, I'm here to help.
+													</p>
+												</li>
+												<li
+													class="apply-chat__message apply-chat__message--user"
+												>
+													<p>👍 All done!</p>
+												</li>
+											</ul>
+										</figure>
+										<h2
+											class="apply-sec-card__title"
+											id="apply-card-3-title"
+										>
+											Got a question?
+											<br />
+											We’re here to help.
+										</h2>
+										<a
+											target="_blank"
+											class="btn btn--gray"
+											href="#"
+											rel="noopener"
+										>
+											Chat with us
+										</a>
+									</article>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section
+						class="sec faq-sec will-change"
+						id="faq"
+					>
+						<div class="container">
+							<h2 class="faq-sec__title">
+								In case you
+								<br />
+								missed enything.
+							</h2>
 
-  <meta charset="UTF-8">
-  <!-- Кодировка символов: UTF-8 корректно показывает кириллицу и спецсимволы -->
+							<div class="faq-container">
+								<!-- Элемент FAQ 1 -->
+								<div class="faq-item">
+									<button
+										class="btn faq-trigger"
+										id="faq-btn-1"
+										aria-expanded="false"
+										aria-controls="faq-answer-1"
+									>
+										<span class="faq-question">Lorem, ipsum dolor?</span>
+										<span
+											class="faq-icon"
+											aria-hidden="true"
+										></span>
+									</button>
+									<div
+										id="faq-answer-1"
+										class="faq-content"
+										role="region"
+										aria-labelledby="faq-btn-1"
+									>
+										<div class="faq-content-inner">
+											<p>
+												Lorem, ipsum dolor sit amet consectetur adipisicing
+												elit. Ab impedit sint animi numquam recusandae ipsam
+												adipisci laudantium unde, voluptates aspernatur
+												voluptatibus tenetur ea minima sunt placeat odit ullam
+												excepturi quo?
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- Элемент FAQ 2 -->
+								<div class="faq-item">
+									<button
+										class="btn faq-trigger"
+										id="faq-btn-2"
+										aria-expanded="false"
+										aria-controls="faq-answer-2"
+									>
+										<span class="faq-question">
+											Lorem, ipsum dolor sit amet consectetur adipisicing?
+										</span>
+										<span
+											class="faq-icon"
+											aria-hidden="true"
+										></span>
+									</button>
+									<div
+										id="faq-answer-2"
+										class="faq-content"
+										role="region"
+										aria-labelledby="faq-btn-2"
+									>
+										<div class="faq-content-inner">
+											<p>
+												Lorem ipsum dolor sit, amet consectetur adipisicing
+												elit. Ex optio eum ullam, assumenda debitis ab?
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- Элемент FAQ 3 -->
+								<div class="faq-item">
+									<button
+										class="btn faq-trigger"
+										id="faq-btn-3"
+										aria-expanded="false"
+										aria-controls="faq-answer-3"
+									>
+										<span class="faq-question">
+											Lorem ipsum dolor sit amet consectetur?
+										</span>
+										<span
+											class="faq-icon"
+											aria-hidden="true"
+										></span>
+									</button>
+									<div
+										id="faq-answer-3"
+										class="faq-content"
+										role="region"
+										aria-labelledby="faq-btn-3"
+									>
+										<div class="faq-content-inner">
+											<p>
+												Lorem ipsum dolor, sit amet consectetur adipisicing
+												elit. Aspernatur, nesciunt.
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- Элемент FAQ 4 -->
+								<div class="faq-item">
+									<button
+										class="btn faq-trigger"
+										id="faq-btn-4"
+										aria-expanded="false"
+										aria-controls="faq-answer-4"
+									>
+										<span class="faq-question">Lorem ipsum dolor sit?</span>
+										<span
+											class="faq-icon"
+											aria-hidden="true"
+										></span>
+									</button>
+									<div
+										id="faq-answer-4"
+										class="faq-content"
+										role="region"
+										aria-labelledby="faq-btn-4"
+									>
+										<div class="faq-content-inner">
+											<p>
+												Lorem ipsum dolor, sit amet consectetur adipisicing
+												elit. Vel earum eveniet aut.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+		</div>
+		<div
+			class="modal"
+			id="booking-modal"
+			role="dialog"
+			aria-modal="true"
+			aria-labelledby="booking-modal-title"
+			aria-describedby="booking-modal-description"
+			inert
+		>
+			<div class="modal__overlay js-close-modal"></div>
+			<div class="modal__main">
+				<button
+					class="btn modal__close js-close-modal"
+					aria-label="Close modal"
+					type="button"
+					tabindex="4"
+				>
+					&times;
+				</button>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Viewport: ширина равна ширине устройства, начальный масштаб 1 — страница адаптируется к экрану -->
+				<h2
+					id="booking-modal-title"
+					class="modal__title"
+				>
+					Ready to Fly?
+				</h2>
+				<p
+					id="booking-modal-description"
+					class="modal__description"
+				>
+					Fill out the form below and our team will get back to you with the
+					best options for your luxury flight experience.
+				</p>
+				<form
+					class="modal__form"
+					id="js-booking-form"
+					action="#"
+					method="post"
+				>
+					<label class="modal__label">
+						<span class="modal__legend">Name</span>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							class="modal__input"
+							required
+							title="Please enter your name"
+							tabindex="1"
+						/>
+						<span class="modal__error">Please enter your name</span>
+					</label>
+					<label class="modal__label">
+						<span class="modal__legend">Email</span>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							class="modal__input"
+							required
+							title="Please enter your email"
+							tabindex="2"
+							pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+						/>
+						<span class="modal__error">Please enter your email</span>
+					</label>
+					<button
+						class="btn btn--primery modal__submit"
+						type="submit"
+						tabindex="3"
+					>
+						Submit
+					</button>
+				</form>
+			</div>
+		</div>
 
-  <title>Frontend Day 1</title>
-  <!-- Текст вкладки браузера и заголовок в истории/закладках -->
-
-  <link rel="stylesheet" href="style.css">
-  <!-- Подключает внешнюю таблицу стилей style.css -->
-
-</head>
-
-<body>
-<!-- Видимое содержимое страницы -->
-
-</body>
-
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+		<!-- ScrollSmoother requires ScrollTrigger -->
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+		<script
+			src="./js/scroll.js"
+			defer
+		></script>
+		<script
+			src="./js/accordion.js"
+			defer
+		></script>
+		<script
+			src="./js/modal.js"
+			defer
+		></script>
+	</body>
 </html>
-<!-- Закрывает корневой элемент html -->

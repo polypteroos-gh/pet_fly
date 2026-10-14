@@ -1,0 +1,21 @@
+.lf-sec {
+  &__pic {
+    position: absolute;
+    top: 0;
+    right: -25vw;
+    transform: rotate(18deg);
+    width: 40rem;
+    max-width: 1000px;
+  }
+}
+@media (max-width: 767px){
+  .lf-sec {
+    padding-bottom: 20rem;
+    &__pic {
+      top: auto;
+      bottom: 0;
+      right: -90vw;
+      width: 150vw;
+    }
+  }
+}

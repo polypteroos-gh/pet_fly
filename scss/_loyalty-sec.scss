@@ -1,0 +1,42 @@
+.loyalty-sec {
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		gap: 12rem;
+	}
+	&__hgroup {
+		width: 28rem;
+		align-self: flex-end;
+		position: relative;
+		z-index: 2;
+	}
+	&__main {
+		max-width: 23rem;
+		position: relative;
+		z-index: 2;
+	}
+	&__pic {
+		position: absolute;
+		top: 2rem;
+		left: -60rem;
+		width: 140rem;
+		max-width: unset;
+	}
+}
+@media (max-width: 767px){
+	.loyalty-sec {
+		&__wrap {
+			gap: 6rem;
+		}
+		&__hgroup {
+			width: 100%;
+		}
+		&__pic {
+			position: absolute;
+			top: 7rem;
+			left: -30rem;
+			width: 50rem;
+		}
+	}
+}

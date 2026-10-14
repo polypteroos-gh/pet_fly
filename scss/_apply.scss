@@ -1,0 +1,128 @@
+.apply-sec {
+  &__wrap {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__row {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      border-radius: 1rem;
+      box-shadow: 0 0 1rem 0 $clr-shd;
+      background-color: $clr-bg;
+    }
+    &::before {
+      right: calc(100% + 1rem);
+    }
+    &::after {
+      left: calc(100% + 1rem);
+    }
+  }
+  &-card {
+    height: 32rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 $clr-shd;
+    width: calc(50% - 0.5rem);
+    overflow: hidden;
+    background-color: $clr-bg;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+    &__title {
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    &--1 {
+      width: 100%;
+      background: url(../assets/images/plane/apply.webp) right 0 no-repeat;
+      background-size: 56rem auto;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    &--2 {
+      background:
+        url(../assets/images/plane/apply-2.webp) center -4rem no-repeat,
+        linear-gradient(to bottom, #373135, #2d2023);
+      background-size: contain;
+      align-items: center;
+      justify-content: flex-end;
+      color: $clr-bg;
+      text-align: center;
+      .apply-sec-card__title {
+        width: 100%;
+      }
+    }
+    &--3 {
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+}
+.apply-chat {
+  flex-grow: 1;
+  width: 100%;
+  &__wrap {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  &__message {
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 70%;
+    font-size: 1rem;
+    background-color: #26a4ff;
+    color: #fff;
+    &--system {
+      align-self: flex-start;
+      color: $clr-txt;
+      background-color: #ccc;
+    }
+  }
+}
+@media (max-width: 767px){
+  .apply-sec {
+
+    &__row {
+      &::before,
+      &::after {display: none;}
+    }
+    &-card {
+      min-height: 18rem;
+      height: auto;
+      width: 100%;
+      gap: 1rem;
+      padding: 1.6rem;
+      &__title {
+        font-size: 1.6rem;
+      }
+      &--1 {
+        background: url(../assets/images/plane/apply-480.webp) center bottom no-repeat;
+        background-size: 23rem auto;
+      }
+      &--2 {
+        background:
+        url(../assets/images/plane/apply-2-480.webp) center -4rem no-repeat,
+        linear-gradient(to bottom, #373135, #2d2023);
+        background-size: contain;
+      }
+    }
+  }
+}
